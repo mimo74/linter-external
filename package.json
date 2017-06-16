@@ -1,7 +1,7 @@
 {
   "name": "linter-external",
   "main": "./lib/linter-external.js",
-  "version": "0.30.0",
+  "version": "0.31.0",
   "description": "linter package for external provider",
   "keywords": [
     "prohibis",
@@ -15,27 +15,21 @@
   "author": {
     "name": "mimo74"
   },
-  "repository": "https://github.com/mimo74/linter-external",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimo74/linter-external.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "homepage": "https://github.com/mimo74/linter-external.git#readme",
   "readme": "./README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mimo74/linter-external.git"
-  },
   "providedServices": {
     "linter": {
       "versions": {
         "2.0.0": "provideLinter"
       }
-    }
-  },
-  "configSchema": {
-    "linterExternalRequestFileNmae": {
-      "type": "boolean"
     }
   },
   "configSchema": {
