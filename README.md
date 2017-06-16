@@ -17,13 +17,13 @@ a 'listener' is required to watch this file and do some magic on change of the f
 
 'Linter - external' reads from the file and displays results with the Linter package
 
-Format of 'Lint answer filename':
+#### Format of 'Lint answer filename'
 
 Simple semicolon seperated textfile:
 
 objekt;row.start.x,row.start.y;row.end.x;row.end.y;message;severity{warning|info|error};
 
 example:
-xmvscc00.p;648;1;648;1;One or more END statements is missing. (246);error;
-xmvscc00.p;460;0;460;0;ON ERROR - for each/first/last without visible on error phrase;error;
-xmvscc00.p;460;0;460;0;share-lock - find, for each/first/last without visible lock phrase or explicit share-lock;error;
+    xmvscc00.p;648;1;648;1;One or more END statements is missing. (246);error;
+    xmvscc00.p;460;0;460;0;ON ERROR - for each/first/last without visible on error phrase;error;
+    xmvscc00.p;460;0;460;0;share-lock - find, for each/first/last without visible lock phrase or explicit share-lock;error;
