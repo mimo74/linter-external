@@ -5,8 +5,6 @@
 [![Package version!](https://img.shields.io/apm/v/linter-external.svg?style=flat-square)](https://atom.io/packages/linter-external)
 [![Dependencies!](https://img.shields.io/david/mimo74/linter-external.svg?style=flat-square)](https://david-dm.org/mimo74/linter-external)
 
-Linter - external
-
 Linter - external is an extension for the [linter](https://atom.io/packages/linter) package for the hackable [Atom Editor](http://atom.io).
 
 #### what it does
@@ -24,6 +22,8 @@ Simple semicolon seperated textfile:
 objekt;row.start.x,row.start.y;row.end.x;row.end.y;message;severity{warning|info|error};
 
 example:
-    xmvscc00.p;648;1;648;1;One or more END statements is missing. (246);error;
-    xmvscc00.p;460;0;460;0;ON ERROR - for each/first/last without visible on error phrase;error;
-    xmvscc00.p;460;0;460;0;share-lock - find, for each/first/last without visible lock phrase or explicit share-lock;error;
+```
+xmvscc00.p;648;1;648;1;One or more END statements is missing. (246);error;
+xmvscc00.p;460;0;460;0;ON ERROR - for each/first/last without visible on error phrase;error;
+xmvscc00.p;460;0;460;0;share-lock - find, for each/first/last without visible lock phrase or explicit share-lock;error;
+```
