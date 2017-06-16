@@ -1,0 +1,64 @@
+{
+  "name": "linter-external",
+  "main": "./lib/linter-external.js",
+  "version": "0.30.0",
+  "description": "linter package for external provider",
+  "keywords": [
+    "prohibis",
+    "proALPHA",
+    "linter"
+  ],
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter"
+  ],
+  "author": {
+    "name": "mimo74"
+  },
+  "repository": "https://github.com/mimo74/linter-external",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/mimo74/linter-external.git#readme",
+  "readme": "./README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimo74/linter-external.git"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "configSchema": {
+    "linterExternalRequestFileNmae": {
+      "type": "boolean"
+    }
+  },
+  "configSchema": {
+    "requestFileName": {
+      "title": "Lint request filename",
+      "description": "the file where to write the filename of the object to be linted by external system",
+      "type": "string",
+      "default": "temp/SCCInput.lint",
+      "order": 2
+    },
+    "answerFileName": {
+      "title": "Lint answer filename",
+      "description": "the file where to expect the answer from the external system",
+      "type": "string",
+      "default": "temp/SCCOutput.lint",
+      "order": 2
+    },
+    "numberOfCharCutFromDir": {
+      "title": "get Lint answer file directory from Editor file with number of char from left",
+      "description": "the here defined number of characters is cut from the left of the filename of the edited file to determine the directory to put temp-files in. Configure 0 and put full path in 'Lint answer filename' if you do not need this.",
+      "type": "number",
+      "default": 9,
+      "order": 3
+    }
+  }
+}
