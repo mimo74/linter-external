@@ -1,7 +1,7 @@
 {
   "name": "linter-external",
   "main": "./lib/linter-external.js",
-  "version": "0.31.0",
+  "version": "0.30.0",
   "description": "linter package for external provider",
   "keywords": [
     "prohibis",
